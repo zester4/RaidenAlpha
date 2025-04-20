@@ -1,0 +1,2 @@
+class WebScraperTool:
+    pass
