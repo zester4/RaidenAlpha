@@ -59,13 +59,13 @@ from github import Github, GithubException
 import tempfile
 import shutil
 from dotenv import load_dotenv # For .env file
+from tools import WeatherTool, SearchTool, WebScraperTool, CodeExecutionTool, DateTimeTool, GitHubTool, DataVisualizationTool, AWSRekognitionTool, ImageGenerationTool
 
 # --- Load Environment Variables ---
 load_dotenv()
 print("Attempted to load API keys from .env file.") # Console print for setup
 
 # --- Setup Logging (Clean Console) ---
-def setup_logging():
     for handler in logging.root.handlers[:]: logging.root.removeHandler(handler)
     log_formatter = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s')
     logger = logging.getLogger("gemini_agent")
