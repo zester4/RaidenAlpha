@@ -1,0 +1,2 @@
+class SearchTool:
+    pass
