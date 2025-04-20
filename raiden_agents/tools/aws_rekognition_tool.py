@@ -1,0 +1,2 @@
+class AWSRekognitionTool:
+    pass
