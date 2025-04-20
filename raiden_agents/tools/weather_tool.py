@@ -1,0 +1,2 @@
+class WeatherTool:
+    pass
