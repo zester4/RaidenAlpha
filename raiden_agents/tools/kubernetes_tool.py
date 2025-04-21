@@ -2,6 +2,7 @@
 
 from kubernetes import client, config, watch
 from kubernetes.client.rest import ApiException
+from kubernetes.stream import stream, portforward
 from typing import Dict, List, Optional, Any, Union
 import logging
 import yaml

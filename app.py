@@ -220,6 +220,9 @@ def initialize_tools():
         tools.APIIntegrationTool(),
         tools.KubernetesTool(),
         tools.DatabaseTool(),
+        tools.EmailIntegrationTool(),
+        tools.NewsAPITool(),
+        tools.CalendarSchedulingTool(),
     ]
     if vector_db.is_ready():
         if hasattr(tools, 'VectorSearchTool'):
