@@ -39,7 +39,10 @@ def install_packages():
         "pyyaml",          # For OpenAPI spec parsing
         "jsonschema",      # For response validation
         "requests-oauthlib", # For OAuth2 support
-        "kubertunes"
+        "kubernetes,
+        "psycopg2-binary",  # PostgreSQL
+        "pymongo",          # MongoDB
+        "aiosqlite"    
     ]
     # Add python-magic if needed by process_file_input's fallback
     try:
@@ -216,6 +219,7 @@ def initialize_tools():
         tools.AudioUnderstandingTool(),
         tools.APIIntegrationTool(),
         tools.KubernetesTool(),
+        tools.DatabaseTool(),
     ]
     if vector_db.is_ready():
         if hasattr(tools, 'VectorSearchTool'):
