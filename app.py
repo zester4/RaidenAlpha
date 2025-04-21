@@ -34,7 +34,15 @@ def install_packages():
         "upstash-redis",
         "PyPDF2", # Added for PDF tool
         "mss", # Added for Screenshot tool
-        "Pillow" # Added for Image Understanding tool
+        "Pillow",
+        "pyjwt",           # For JWT handling
+        "pyyaml",          # For OpenAPI spec parsing
+        "jsonschema",      # For response validation
+        "requests-oauthlib", # For OAuth2 support
+        "kubernetes",
+        "psycopg2-binary",  # PostgreSQL
+        "pymongo",          # MongoDB
+        "aiosqlite"    
     ]
     # Add python-magic if needed by process_file_input's fallback
     try:
@@ -208,7 +216,10 @@ def initialize_tools():
         tools.ScreenshotTool(), 
         tools.ImageUnderstandingTool(), 
         tools.VideoUnderstandingTool(), 
-        tools.AudioUnderstandingTool() 
+        tools.AudioUnderstandingTool(),
+        tools.APIIntegrationTool(),
+        tools.KubernetesTool(),
+        tools.DatabaseTool(),
     ]
     if vector_db.is_ready():
         if hasattr(tools, 'VectorSearchTool'):
