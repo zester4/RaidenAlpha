@@ -447,7 +447,7 @@ def handle_streaming_response(stream):
 
 # --- Main Chat Loop ---
 def chat_agent():
-    model_name = "gemini/gemini-pro-vision" 
+    model_name = "gemini/gemini-2.0-flash" 
     # Initialize Redis memory
     memory = RedisPersistentMemory(vector_db_client=vector_db, system_message=SYSTEM_MESSAGE, max_tokens=1_048_576) 
 
