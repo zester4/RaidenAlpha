@@ -14,3 +14,4 @@ from .screenshot_tool import ScreenshotTool # Added
 from .image_understanding_tool import ImageUnderstandingTool # Added
 from .video_understanding_tool import VideoUnderstandingTool # Added
 from .audio_understanding_tool import AudioUnderstandingTool # Added
+from .api_integration_tool import APIIntegrationTool  # Added
