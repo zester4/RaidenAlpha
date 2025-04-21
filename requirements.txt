@@ -1,0 +1,14 @@
+litellm
+python-dotenv
+requests
+duckduckgo-search
+firecrawl-py
+sentence-transformers
+numpy
+matplotlib
+PyGithub
+upstash-vector
+upstash-redis
+PyPDF2
+mss # For screenshots
+Pillow # For image handling/verification

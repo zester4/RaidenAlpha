@@ -1,8 +1,13 @@
 import logging
+from dotenv import load_dotenv
+import os
+import requests
 from datetime import datetime
 from .base_tool import Tool, ToolExecutionError, VectorDBError
 
 logger = logging.getLogger("gemini_agent")
+
+load_dotenv()
 
 class VectorSearchTool(Tool):
     def __init__(self):

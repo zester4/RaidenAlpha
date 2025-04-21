@@ -1,11 +1,14 @@
 import logging
 import requests
 import json
+from dotenv import load_dotenv
 import traceback
 from datetime import datetime
 from firecrawl import FirecrawlApp
 from .base_tool import Tool, ToolExecutionError
 
+
+load_dotenv()
 logger = logging.getLogger("gemini_agent")
 
 # Get API key from environment

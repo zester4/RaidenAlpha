@@ -1,11 +1,14 @@
 import logging
 import requests
+from dotenv import load_dotenv
+import time
 import json
 from datetime import datetime
 from .base_tool import Tool, ToolExecutionError
 
 logger = logging.getLogger("gemini_agent")
 
+load_dotenv()
 # Get API key from environment
 import os
 openweathermap_api_key = os.environ.get("OPENWEATHERMAP_API_KEY")

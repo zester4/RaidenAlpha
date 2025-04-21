@@ -5,12 +5,14 @@ import traceback
 import base64
 import os
 from pathlib import Path # Used for local file handling
-# Assuming boto3 is installed in the environment
+from dotenv import load_dotenv # For loading environment variables
 import boto3
 from botocore.exceptions import NoCredentialsError, PartialCredentialsError, ClientError # Import specific exceptions
 from datetime import datetime
 from raiden_agents.tools.base_tool import Tool, ToolExecutionError # Import base Tool and exceptions
 
+
+load_dotenv()
 logger = logging.getLogger("gemini_agent") # Assuming logger is configured elsewhere
 
 # Assuming AWS credentials are accessible
