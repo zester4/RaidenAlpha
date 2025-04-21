@@ -208,7 +208,8 @@ def initialize_tools():
         tools.ScreenshotTool(), 
         tools.ImageUnderstandingTool(), 
         tools.VideoUnderstandingTool(), 
-        tools.AudioUnderstandingTool() 
+        tools.AudioUnderstandingTool(),
+        tools.APIIntegrationTool(),
     ]
     if vector_db.is_ready():
         if hasattr(tools, 'VectorSearchTool'):
