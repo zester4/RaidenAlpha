@@ -12,3 +12,5 @@ upstash-redis
 PyPDF2
 mss # For screenshots
 Pillow # For image handling/verification
+streamlit
+python-magic-bin # For MIME type detection fallback
