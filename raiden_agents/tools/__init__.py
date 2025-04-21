@@ -16,3 +16,4 @@ from .video_understanding_tool import VideoUnderstandingTool # Added
 from .audio_understanding_tool import AudioUnderstandingTool # Added
 from .api_integration_tool import APIIntegrationTool  # Added
 from .kubernetes_tool import KubernetesTool
+from .database_tool import DatabaseTool
