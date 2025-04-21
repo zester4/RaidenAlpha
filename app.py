@@ -34,7 +34,11 @@ def install_packages():
         "upstash-redis",
         "PyPDF2", # Added for PDF tool
         "mss", # Added for Screenshot tool
-        "Pillow" # Added for Image Understanding tool
+        "Pillow",
+        "pyjwt",           # For JWT handling
+        "pyyaml",          # For OpenAPI spec parsing
+        "jsonschema",      # For response validation
+        "requests-oauthlib", # For OAuth2 support
     ]
     # Add python-magic if needed by process_file_input's fallback
     try:
