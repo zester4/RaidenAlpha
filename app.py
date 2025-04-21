@@ -39,7 +39,7 @@ def install_packages():
         "pyyaml",          # For OpenAPI spec parsing
         "jsonschema",      # For response validation
         "requests-oauthlib", # For OAuth2 support
-        "kubernetes,
+        "kubernetes",
         "psycopg2-binary",  # PostgreSQL
         "pymongo",          # MongoDB
         "aiosqlite"    
