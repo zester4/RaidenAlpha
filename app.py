@@ -225,6 +225,7 @@ def initialize_tools():
         tools.CalendarSchedulingTool(),
         tools.NaturalLanguageProcessingTool(),
         tools.TaskAutomationTool(),
+        tools.AlphaVantageTool(),
     ]
     if vector_db.is_ready():
         if hasattr(tools, 'VectorSearchTool'):
