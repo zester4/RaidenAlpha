@@ -1,3 +1,4 @@
+from .nlp_tool import NaturalLanguageProcessingTool
 from .weather_tool import WeatherTool
 from .search_tool import SearchTool
 from .web_scraper_tool import WebScraperTool
