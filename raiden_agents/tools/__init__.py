@@ -25,3 +25,4 @@ from .database_tool import DatabaseTool # Added
 from .tavily_tool import TavilyTool
 from .telegram_tool import TelegramTool
 from .api_integration_tool import APIIntegrationTool # Added
+from .stripe_tool import StripePaymentTool
