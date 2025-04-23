@@ -224,6 +224,7 @@ def initialize_tools():
         tools.NewsAPITool(),
         tools.CalendarSchedulingTool(),
         tools.NaturalLanguageProcessingTool(),
+        tools.TaskAutomationTool(),
     ]
     if vector_db.is_ready():
         if hasattr(tools, 'VectorSearchTool'):
