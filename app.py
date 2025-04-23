@@ -223,6 +223,7 @@ def initialize_tools():
         tools.EmailIntegrationTool(),
         tools.NewsAPITool(),
         tools.CalendarSchedulingTool(),
+        tools.NaturalLanguageProcessingTool(),
     ]
     if vector_db.is_ready():
         if hasattr(tools, 'VectorSearchTool'):
