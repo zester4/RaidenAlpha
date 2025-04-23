@@ -1,5 +1,6 @@
 from .nlp_tool import NaturalLanguageProcessingTool
 from .weather_tool import WeatherTool
+from .alpha_vantage_tool import AlphaVantageTool
 from .search_tool import SearchTool
 from .web_scraper_tool import WebScraperTool
 from .code_execution_tool import CodeExecutionTool
