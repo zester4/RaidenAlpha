@@ -22,4 +22,5 @@ from .news_tool import NewsAPITool # Added
 from .calendar_tool import CalendarSchedulingTool # Added
 from .database_tool import DatabaseTool # Added
 from .kubernetes_tool import KubernetesTool # Added
+from .tavily_tool import TavilyTool
 from .api_integration_tool import APIIntegrationTool # Added
