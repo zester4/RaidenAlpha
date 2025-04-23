@@ -227,7 +227,8 @@ def initialize_tools():
         tools.TaskAutomationTool(),
         tools.AlphaVantageTool(),
         tools.TavilyTool(),
-        tools.TelegramTool()
+        tools.TelegramTool(),
+        tools.StripePaymentTool()
     ]
     if vector_db.is_ready():
         if hasattr(tools, 'VectorSearchTool'):
