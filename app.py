@@ -226,6 +226,7 @@ def initialize_tools():
         tools.NaturalLanguageProcessingTool(),
         tools.TaskAutomationTool(),
         tools.AlphaVantageTool(),
+        tools.TavilyTool(),
     ]
     if vector_db.is_ready():
         if hasattr(tools, 'VectorSearchTool'):
