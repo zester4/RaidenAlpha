@@ -16,3 +16,6 @@ streamlit
 python-magic-bin # For MIME type detection fallback
 telegram
 telebot
+stripe
+redis
+firebase-admin
