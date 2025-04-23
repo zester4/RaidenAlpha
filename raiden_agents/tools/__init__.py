@@ -5,6 +5,7 @@ from .web_scraper_tool import WebScraperTool
 from .code_execution_tool import CodeExecutionTool
 from .datetime_tool import DateTimeTool
 from .github_tool import GitHubTool
+from .task_automation_tool import TaskAutomationTool
 from .data_visualization_tool import DataVisualizationTool
 from .aws_rekognition_tool import AWSRekognitionTool
 from .image_generation_tool import ImageGenerationTool
