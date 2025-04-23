@@ -218,7 +218,7 @@ def initialize_tools():
         tools.VideoUnderstandingTool(), 
         tools.AudioUnderstandingTool(),
         tools.APIIntegrationTool(),
-        tools.KubernetesTool(),
+        #tools.KubernetesTool(),
         tools.DatabaseTool(),
         tools.EmailIntegrationTool(),
         tools.NewsAPITool(),
@@ -227,6 +227,7 @@ def initialize_tools():
         tools.TaskAutomationTool(),
         tools.AlphaVantageTool(),
         tools.TavilyTool(),
+        tools.TelegramTool()
     ]
     if vector_db.is_ready():
         if hasattr(tools, 'VectorSearchTool'):
